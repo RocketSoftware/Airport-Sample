@@ -1,5 +1,8 @@
 # Airport Sample
 
+<a href="https://raw.githubusercontent.com/MicroFocus/Airport-Sample/main/airport.png">
+    <img src="airport.png" style="width: 201px;" align="right" alt="Airport screenshot"/>
+</a>
 This sample is a Visual Studio native graphical console application that enables you to view the geographical location and the distance between airports. It shows how to use native COBOL to handle indexed data files. The information about the airport codes is stored in the airports.dat file.
 
 This sample also demonstrates using the Micro Focus Unit Testing Framework for unit testing the Airport sample.
