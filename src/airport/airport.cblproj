@@ -4,12 +4,12 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <ProjectGuid>{BC0F464B-040E-4171-BC16-F2CFA6B6DDAD}</ProjectGuid>
-    <OutputName>AirportConsoleApplication</OutputName>
+    <OutputName>airport</OutputName>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AirportConsoleApplication</RootNamespace>
+    <RootNamespace>airport</RootNamespace>
     <MFProjectType>Native</MFProjectType>
     <StartupObject>airport</StartupObject>
-    <MFDependencyPaths>..\Copybooks</MFDependencyPaths>
+    <MFDependencyPaths>..\..\cpy</MFDependencyPaths>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>..\bin\x86\Debug\</OutputPath>

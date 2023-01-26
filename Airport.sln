@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "AirportConsoleApplication", "AirportConsoleApplication\AirportConsoleApplication.cblproj", "{BC0F464B-040E-4171-BC16-F2CFA6B6DDAD}"
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "airport", "src\airport\airport.cblproj", "{BC0F464B-040E-4171-BC16-F2CFA6B6DDAD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1D5AC92E-1B18-4E62-AF9E-692CAE02723A} = {1D5AC92E-1B18-4E62-AF9E-692CAE02723A}
 	EndProjectSection
 EndProject
-Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "AirportLinkLibrary", "AirportLinkLibrary\AirportLinkLibrary.cblproj", "{1D5AC92E-1B18-4E62-AF9E-692CAE02723A}"
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "aircode", "src\aircode\aircode.cblproj", "{1D5AC92E-1B18-4E62-AF9E-692CAE02723A}"
 EndProject
-Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "TestAirportLinkLibrary", "TestAirportLinkLibrary\TestAirportLinkLibrary.cblproj", "{015197AF-A120-4C87-920E-6879C2A91AFD}"
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "AirportTests", "test\AirportTests\AirportTests.cblproj", "{015197AF-A120-4C87-920E-6879C2A91AFD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1D5AC92E-1B18-4E62-AF9E-692CAE02723A} = {1D5AC92E-1B18-4E62-AF9E-692CAE02723A}
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D9B1160C-2546-4D6C-99AB-BA15402793C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EE908BE7-3BAB-4996-906F-6C54D94FB335}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +54,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC0F464B-040E-4171-BC16-F2CFA6B6DDAD} = {D9B1160C-2546-4D6C-99AB-BA15402793C7}
+		{1D5AC92E-1B18-4E62-AF9E-692CAE02723A} = {D9B1160C-2546-4D6C-99AB-BA15402793C7}
+		{015197AF-A120-4C87-920E-6879C2A91AFD} = {EE908BE7-3BAB-4996-906F-6C54D94FB335}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A31FB45E-2AE5-4868-A1A8-D974DE915908}
