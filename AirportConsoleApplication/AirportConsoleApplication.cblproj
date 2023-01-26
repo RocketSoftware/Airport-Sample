@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{BC0F464B-040E-4171-BC16-F2CFA6B6DDAD}</ProjectGuid>
+    <OutputName>AirportConsoleApplication</OutputName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AirportConsoleApplication</RootNamespace>
+    <MFProjectType>Native</MFProjectType>
+    <StartupObject>airport</StartupObject>
+    <MFDependencyPaths>..\Copybooks</MFDependencyPaths>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>..\bin\x86\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <ManagedCode>False</ManagedCode>
+    <DebugSymbols>True</DebugSymbols>
+    <WarningLevel>2</WarningLevel>
+    <MaxError>100</MaxError>
+    <NativeGraphicalApplication>True</NativeGraphicalApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <OutputPath>.\bin\x64\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <ManagedCode>False</ManagedCode>
+    <DebugSymbols>True</DebugSymbols>
+    <WarningLevel>2</WarningLevel>
+    <MaxError>100</MaxError>
+    <NativeGraphicalApplication>True</NativeGraphicalApplication>
+    <IntermediatePath>.\obj\x64\Debug\</IntermediatePath>
+    <Pointer64>True</Pointer64>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\x86\Release\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <ManagedCode>False</ManagedCode>
+    <DebugSymbols>False</DebugSymbols>
+    <WarningLevel>2</WarningLevel>
+    <MaxError>100</MaxError>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>.\bin\x64\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <ManagedCode>False</ManagedCode>
+    <DebugSymbols>False</DebugSymbols>
+    <WarningLevel>2</WarningLevel>
+    <MaxError>100</MaxError>
+    <IntermediatePath>.\obj\x64\Release\</IntermediatePath>
+    <Pointer64>True</Pointer64>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="airport.cbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="application.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="airports.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets" />
+</Project>

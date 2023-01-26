@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="..\..\XSLT\Overview.xslt" type="text/xsl"?>
+<sample>
+  <name>MFUnit Airport Demo</name>
+  <contents>
+    <content linkto="overview">Overview</content>
+    <content linkto="howToRun">How to Run this Demonstration</content>
+  </contents>
+  <overview>
+    <heading>Overview</heading>
+    <directory>Samples\COBOL\AirportMFUnitDemo</directory>
+    <description>
+       This sample demonstrates using the Micro Focus Unit Testing Framework to test the native  AirportDemo sample. You can follow the "Tutorial: Running Unit Tests in the IDE" which is available in the product documentation. The tutorial offers a step-by-step guide to creating, running and debugging COBOL unit tests for the AirportDemo application. This sample is the completed version of the tutorial.
+    </description>
+  </overview>
+  <howToRun>
+    <heading>How to Run this Demonstration</heading>
+    <steps>
+      <step>
+        <description>To run this demonstration in Visual Studio:</description>
+        <steps>
+          <step>Select "Open sample in Visual Studio" to open AirportMFUnitDemo.sln.</step>
+	  <step>Open TestAIRCODE.cbl in the editor. This is the unit test.</step>
+	  <step>Right-click in the editor and select "Run Test(s)". The project is compiled and the test runs.</step>
+	  <step>View the results in the "Micro Focus Unit Testing" tool window. The test has passed.</step>
+	  <step>
+ 	    <description>To run the test with code coverage, you have to compile the application under test with code coverage enabled. </description>
+	      <steps>
+	        <step>In the Solution Explorer pane, expand the AirportLinkLibrary project, then double-click Properties. </step>
+	        <step>Click the COBOL tab.</step>
+			<step>In the Output section, select Enable code coverage, then press Ctrl+S to save the changes. </step>
+		<step>In the Solution Explorer pane, right-click the AirportLinkLibrary project, then click Rebuild. The project is rebuilt with code coverage enabled. </step>
+		<step>In the Micro Focus Unit Testing window, click Run All (Code Coverage).
+The TestAIRCODE test case is re-run and on completion code coverage statistics are displayed in the Micro Focus Unit Testing window.</step>
+		<step>Double-click "Section: distance-between-airports". The cursor is positioned in the source code at the distance-between-airports section, and the source code is colorized to indicate which code was executed.</step>
+	      </steps>
+	    </step>  
+          <step>To debug the test case, place a breakpoint on the test case entry point, then select "Debug Test(s)" from the editor context menu or right-click the test in the "Micro Focus Unit Testing" window and select "Debug Test".</step>
+        </steps>
+      </step>
+    </steps>
+  </howToRun>
+</sample>
