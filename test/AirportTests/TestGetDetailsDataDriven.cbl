@@ -7,8 +7,6 @@
       *
       ******************************************************************
 
-      *> Test Fixture for AirportLinkLibrary, TestGetDetailsDataDriven
-
        copy "mfunit_prototypes.cpy".
 
        program-id. TestGetDetailsDataDriven.
@@ -126,7 +124,7 @@
        entry MFU-TC-SETUP-PREFIX & TEST-TESTGETDETAILSVALIDCODE.
        entry MFU-TC-SETUP-PREFIX & TEST-TESTGETDETAILSINVALIDCODE.
            *> Load the library that is being tested
-           set pp to entry "AirportLinkLibrary"
+           set pp to entry "aircode"
 
            initialize lnk-function
            initialize lnk-airport1

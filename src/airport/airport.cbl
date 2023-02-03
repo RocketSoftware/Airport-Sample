@@ -25,7 +25,7 @@
        copy "distsrch.ss".
 
        procedure division.
-           set pp to entry "AirportLinkLibrary"
+           set pp to entry "aircode"
 
            display spaces upon crt
 
