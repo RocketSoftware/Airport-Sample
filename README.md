@@ -32,7 +32,7 @@ The files include:
 2. Build the solution and start debugging.
 3. Follow the instructions on the console. To see the available airport codes view the airports.dat file by opening it using the Data File Editor.
 4. Open the "Micro Focus Unit Testing" tool window and click "Run All" to run all the unit tests.
-5. To run the unit tests with code coverage, first edit the project properties of aircode and AirportTests, select the COBOL tab and check "Enable code coverage". Then click "Run with Code Coverage" in the "Micro Focus Unit Testing" tool window.
+5. To run the unit tests with code coverage, first edit the project properties of aircode and AirportTests, select the COBOL tab and ensure "Enable code coverage" is checked. Then click "Run with Code Coverage" in the "Micro Focus Unit Testing" tool window.
 
 ## License
 
