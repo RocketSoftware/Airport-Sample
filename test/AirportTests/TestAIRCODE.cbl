@@ -1,6 +1,6 @@
       ******************************************************************
       *
-      * Copyright (C) Micro Focus 2017-2018. All rights reserved.
+      * (C) Copyright 2017-2023 Micro Focus or one of its affiliates.
       *
       * This sample code is supplied for demonstration purposes only
       * on an "as is" basis and is for use at your own risk.
