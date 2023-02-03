@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "aircode", "src\aircode\aircode.cblproj", "{1D5AC92E-1B18-4E62-AF9E-692CAE02723A}"
+EndProject
 Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "airport", "src\airport\airport.cblproj", "{BC0F464B-040E-4171-BC16-F2CFA6B6DDAD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1D5AC92E-1B18-4E62-AF9E-692CAE02723A} = {1D5AC92E-1B18-4E62-AF9E-692CAE02723A}
 	EndProjectSection
-EndProject
-Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "aircode", "src\aircode\aircode.cblproj", "{1D5AC92E-1B18-4E62-AF9E-692CAE02723A}"
 EndProject
 Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "AirportTests", "test\AirportTests\AirportTests.cblproj", "{015197AF-A120-4C87-920E-6879C2A91AFD}"
 	ProjectSection(ProjectDependencies) = postProject
