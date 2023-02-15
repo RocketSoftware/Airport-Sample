@@ -37,20 +37,21 @@ The files include:
 ### Eclipse
 
 1. Open Enterpise Developer for Eclipse.
-2. From the Project Explorer select 'Import', 'General', 'Existing projects into workspace'. Navigate to where you cloned the projects to, 'Select all', 'Finish'.
+2. From the Project Explorer select `Import`, `General`, `Existing projects into workspace`. Navigate to where you cloned the projects to, `Select all`, `Finish`.
 3. Build the project.
-3. Right-click the Airport project, 'Run As', 'Run configurations'. Choose 'COBOL Aplication', create a new launch configuration and open it. 
-4. Navigate to the ‘Environment’ tab and add: 'dd_airports' and '..\airports.dat' as the variable and value.
+3. Right-click the Airport project, `Run As`, `Run configurations`. Choose `COBOL Aplication`, create a new launch configuration and open it. 
+4. Navigate to the `Environment` tab and add: `dd_airports` and `..\airports.dat` as the variable and value.
 5. You can now run and debug using your new launch configuration.
-6. To run the unit tests:
-7. Right-click the AirportTests project, 'Run As', 'Run configurations'. Choose 'COBOL Unit test', create a new launch configuration and open it.
-8. Navigate to the ‘Environment’ tab and add: 'dd_airports' and '..\..\..\src\airport\airports.dat' as the variable and value.
-9. You can now run all the unit tests using your new launch configuration.
-10. To enable code coverage:
-11. For Airport and Aircode right-click on each of the projects and select 'Properties -> MicroFocus -> Project Settings -> COBOL' set 'Enable code coverage' to true
-12. Open the launch configuration you made to run and debug the program, navigate to the 'Dynamic analysis' Tab. Check 'Enable code coverage'
-13. Build and run the sample
-14. To view code coverage results navigate to the 'Code coverage' tab of the bottom plain of the IDE. Select import, and select the .tcz file within the coverage folder of the project folder structure. You should now be able to see and interact with coverage data.
+#### To run the unit tests:
+1. Right-click the AirportTests project, `Run As`, 'Run configurations'. Choose `COBOL Unit test`, create a new launch configuration and open it.
+2. Navigate to the `Environment` tab and add: `dd_airports` and `..\..\..\src\airport\airports.dat` as the variable and value.
+3. You can now run all the unit tests using your new launch configuration.
+#### To enable code coverage:
+1. For Airport and Aircode right-click on each of the projects and select `Properties -> MicroFocus -> Project Settings -> COBOL` set `Enable code coverage` to true.
+2. Open the launch configuration you made to run and debug the program, navigate to the 'Dynamic analysis' Tab. Check 'Enable code coverage'
+3. Build and run the sample.
+4. To view code coverage results navigate to the `Code coverage` tab of the bottom plain of the IDE. Select `import`, and select the .tcz file within the coverage folder of the project folder structure. 
+5. You should now be able to see and interact with coverage data.
 
 ## License
 
