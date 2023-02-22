@@ -6,10 +6,12 @@
          <path enabled="false" name="/AirportTests/Properties" type="mfpath"/>
          <path enabled="true" name="/aircode" type="mfpath"/>
          <path enabled="true" name="/cpy" type="mfpath"/>
+         <path enabled="false" name="/AirportTests/test-data" type="mfpath"/>
       </copybook-paths>
       <build-precedence-paths xsi:type="buildPrecedenceSettings">
          <path enabled="true" name="/AirportTests" type="mfpath"/>
          <path enabled="true" name="/AirportTests/Properties" type="mfpath"/>
+         <path enabled="true" name="/AirportTests/test-data" type="mfpath"/>
       </build-precedence-paths>
       <configurations default="New Configuration" linkedWith="2017" xsi:type="buildConfigurationsContainer">
          <configuration description="New Configuration" type="single_dll" xsi:type="cobolBuildConfiguration">
@@ -43,7 +45,7 @@
                <options>
                   <option id="targetName" name="linkSettings" value="AirportTests"/>
                   <option id="applicationType" name="linkSettings" value="console"/>
-                  <option id="outputDirectory" name="linkSettings" value="New Configuration.bin"/>
+                  <option id="outputDirectory" name="linkSettings" value="tests.bin"/>
                   <option id="type" name="linkSettings" value="single_dll"/>
                   <option id="threadedRts" name="linkSettings" value="threadedRts"/>
                   <option id="runtimeModel" name="linkSettings" value="shared"/>

@@ -7,11 +7,13 @@
          <path enabled="false" name="/aircode" type="mfpath"/>
          <path enabled="true" name="/cpy" type="mfpath"/>
          <path enabled="false" name="/airport/Coverage" type="mfpath"/>
+         <path enabled="false" name="/airport/New_Configuration.binx" type="mfpath"/>
       </copybook-paths>
       <build-precedence-paths xsi:type="buildPrecedenceSettings">
          <path enabled="true" name="/airport" type="mfpath"/>
          <path enabled="true" name="/airport/Properties" type="mfpath"/>
          <path enabled="true" name="/airport/Coverage" type="mfpath"/>
+         <path enabled="true" name="/airport/New_Configuration.binx" type="mfpath"/>
       </build-precedence-paths>
       <configurations default="New Configuration" linkedWith="2017" xsi:type="buildConfigurationsContainer">
          <configuration description="New Configuration" type="single_exe" xsi:type="cobolBuildConfiguration">
@@ -48,7 +50,7 @@
                <options>
                   <option id="targetName" name="linkSettings" value="airport"/>
                   <option id="applicationType" name="linkSettings" value="console"/>
-                  <option id="outputDirectory" name="linkSettings" value="New Configuration.bin"/>
+                  <option id="outputDirectory" name="linkSettings" value="airport.bin"/>
                   <option id="type" name="linkSettings" value="single_exe"/>
                   <option id="threadedRts" name="linkSettings" value="threadedRts"/>
                   <option id="runtimeModel" name="linkSettings" value="shared"/>
@@ -95,6 +97,7 @@
       <filetype type="cobol.copybook" xsi:type="cobolFileContainer"/>
       <folders xsi:type="cobolFolderContainer">
          <folder compile="true" path="New_Configuration.bin" xsi:type="cobolFolder"/>
+         <folder compile="true" path="airport.bin" xsi:type="cobolFolder"/>
       </folders>
    </files>
 </project>

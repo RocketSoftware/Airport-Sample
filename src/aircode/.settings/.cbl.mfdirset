@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <x:dirset xmlns:x="http://microfocus.com/directivesset" schemaVersion="1.1">
   <x:directive handler="project.cobolSettings" id="max-error" name="MAX-ERROR&quot;100&quot;"/>
-  <x:directive handler="project.cobolSettings" id="coverage" name="TESTCOVER"/>
+  <x:directive handler="project.cobolSettings" id="coverage" name="NOTESTCOVER"/>
   <x:directive handler="project.cobolSettings" id="charset" name="CHARSET&quot;ASCII&quot;"/>
   <x:directive handler="project.cobolSettings" id="dialect" name="DIALECT&quot;MF&quot;"/>
   <x:directive handler="project.cobolSettings" id="genListFile" name="NOLIST"/>

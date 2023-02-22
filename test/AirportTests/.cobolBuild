@@ -26,7 +26,7 @@
 	<property name="mf.cobolFailOnError" value="true"/>
 	<property name="mf.cobollinkFailOnError" value="${mf.failOnError}"/>
 	<property name="mf.entryPoint.cfg.New_Configuration" value=""/>
-	<property name="mf.destDir.cfg.New_Configuration" value="${basedir}/New_Configuration.bin"/>
+	<property name="mf.destDir.cfg.New_Configuration" value="${basedir}/tests.bin"/>
 	<property name="mf.sdkLocation" value="C:\Program Files (x86)\Micro Focus\Enterprise Developer\Microsoft\SDK\10\Bin\10.0.19041.0\"/>
 	<property name="mf.buildToolsLocation" value="C:\Program Files (x86)\Micro Focus\Enterprise Developer\Microsoft\VC\Tools\MSVC\14.33.31629\bin\Host"/>
 	<target name="printLocations">
@@ -106,7 +106,7 @@
 	<!--  ********************************  -->
 	<!-- Configuration:New_Configuration -->
 	<target name="FileCompile.New_Configuration.cobol">
-		<cobol debug="true" configuration="New Configuration" analysisData="${analysisData}" threadCount="${mf.buildThreadCount}" settingsDir="${mf.settingsDir}" threadedRts="true" analysisDataDir="${analysisDataDir}" useDirectiveSet="${mf.useDirectiveSet}" srcfile="${fullFileName}" destdir="${basedir}/New_Configuration.bin" is64bit="true" failonerror="${mf.cobolFailOnError}" srcdir="${basedir}" forceCompile="${mf.forceCompile}" connectionName="${mf.connectionName}" projectName="${mf.projectName}" desttype="obj">
+		<cobol debug="true" configuration="New Configuration" analysisData="${analysisData}" threadCount="${mf.buildThreadCount}" settingsDir="${mf.settingsDir}" threadedRts="true" analysisDataDir="${analysisDataDir}" useDirectiveSet="${mf.useDirectiveSet}" srcfile="${fullFileName}" destdir="${basedir}/tests.bin" is64bit="true" failonerror="${mf.cobolFailOnError}" srcdir="${basedir}" forceCompile="${mf.forceCompile}" connectionName="${mf.connectionName}" projectName="${mf.projectName}" desttype="obj">
 			<mffilelist refid="cobol.copybook.locations"/>
 			<mfdirlist refid="cobol_directive_set_1"/>
 		</cobol>
@@ -115,7 +115,7 @@
 	<!--  * Object files *  -->
 	<!--  ****************  -->
 	<!-- Default -->
-	<mffilelist id="cobol.default.object.files.New Configuration" srcdir="${basedir}/New_Configuration.bin" type="objfile">
+	<mffilelist id="cobol.default.object.files.New Configuration" srcdir="${basedir}/tests.bin" type="objfile">
 		<file name="TestAIRCODE${mf.objext}"/>
 		<file name="TestGetDetails${mf.objext}"/>
 		<file name="TestGetDetailsDataDriven${mf.objext}"/>
@@ -164,7 +164,7 @@
 		<executefilecompile filesList="${filesList}"/>
 	</target>
 	<target name="cobol.compile.cfg.New_Configuration">
-		<cobol debug="true" configuration="New Configuration" analysisData="${analysisData}" threadCount="${mf.buildThreadCount}" settingsDir="${mf.settingsDir}" threadedRts="true" analysisDataDir="${analysisDataDir}" useDirectiveSet="${mf.useDirectiveSet}" destdir="${basedir}/New_Configuration.bin" is64bit="true" failonerror="${mf.cobolFailOnError}" forceCompile="${mf.forceCompile}" connectionName="${mf.connectionName}" projectName="${mf.projectName}" desttype="obj">
+		<cobol debug="true" configuration="New Configuration" analysisData="${analysisData}" threadCount="${mf.buildThreadCount}" settingsDir="${mf.settingsDir}" threadedRts="true" analysisDataDir="${analysisDataDir}" useDirectiveSet="${mf.useDirectiveSet}" destdir="${basedir}/tests.bin" is64bit="true" failonerror="${mf.cobolFailOnError}" forceCompile="${mf.forceCompile}" connectionName="${mf.connectionName}" projectName="${mf.projectName}" desttype="obj">
 			<mffilelist refid="cobol.copybook.locations"/>
 			<mfdirlist refid="cobol_directive_set_1"/>
 			<mffilelist refid="cobol_file_set_1"/>
@@ -182,10 +182,10 @@
 	<target name="deploy.cfg.New_Configuration">
 	</target>
 	<target name="clean.cfg.New_Configuration">
-		<cobolclean debug="true" destdir="${basedir}/New_Configuration.bin" desttype="dll">
+		<cobolclean debug="true" destdir="${basedir}/tests.bin" desttype="dll">
 			<mffilelist refid="cobol_file_set_1"/>
 		</cobolclean>
-		<cobolclean destdir="${basedir}/New_Configuration.bin" desttype="dll">
+		<cobolclean destdir="${basedir}/tests.bin" desttype="dll">
 			<mffilelist>
 				<file name="AirportTests"/>
 			</mffilelist>
