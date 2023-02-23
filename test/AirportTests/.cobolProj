@@ -6,12 +6,10 @@
          <path enabled="false" name="/AirportTests/Properties" type="mfpath"/>
          <path enabled="true" name="/aircode" type="mfpath"/>
          <path enabled="true" name="/cpy" type="mfpath"/>
-         <path enabled="false" name="/AirportTests/test-data" type="mfpath"/>
       </copybook-paths>
       <build-precedence-paths xsi:type="buildPrecedenceSettings">
          <path enabled="true" name="/AirportTests" type="mfpath"/>
          <path enabled="true" name="/AirportTests/Properties" type="mfpath"/>
-         <path enabled="true" name="/AirportTests/test-data" type="mfpath"/>
       </build-precedence-paths>
       <configurations default="New Configuration" linkedWith="2017" xsi:type="buildConfigurationsContainer">
          <configuration description="New Configuration" type="single_dll" xsi:type="cobolBuildConfiguration">

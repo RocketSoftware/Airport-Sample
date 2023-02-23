@@ -5,12 +5,10 @@
          <path enabled="true" name="/aircode" type="mfpath"/>
          <path enabled="false" name="/aircode/Properties" type="mfpath"/>
          <path enabled="true" name="/cpy" type="mfpath"/>
-         <path enabled="false" name="/aircode/New_Configuration.binx" type="mfpath"/>
       </copybook-paths>
       <build-precedence-paths xsi:type="buildPrecedenceSettings">
          <path enabled="true" name="/aircode" type="mfpath"/>
          <path enabled="true" name="/aircode/Properties" type="mfpath"/>
-         <path enabled="true" name="/aircode/New_Configuration.binx" type="mfpath"/>
       </build-precedence-paths>
       <configurations default="New Configuration" linkedWith="2017" xsi:type="buildConfigurationsContainer">
          <configuration description="New Configuration" type="all_dll" xsi:type="cobolBuildConfiguration">
