@@ -3,7 +3,7 @@
 <a href="https://raw.githubusercontent.com/MicroFocus/Airport-Sample/main/airport.png">
     <img src="airport.png" style="width: 201px;" align="right" alt="Airport screenshot"/>
 </a>
-This sample is a Visual Studio native graphical console application that enables you to view the geographical location and the distance between airports. It shows how to use native COBOL to handle indexed data files. The information about the airport codes is stored in the airports.dat file.
+This sample is a native graphical console application that enables you to view the geographical location and the distance between airports. It shows how to use native COBOL to handle indexed data files. The information about the airport codes is stored in the airports.dat file.
 
 This sample also demonstrates using the Micro Focus Unit Testing Framework for unit testing the Airport sample.
 
@@ -37,7 +37,7 @@ The files include:
 ### Eclipse
 
 1. Open Enterpise Developer for Eclipse.
-2. From the Project Explorer select `Import`, `General`, `Existing projects into workspace`. Navigate to where you cloned the projects to, `Select all`, `Finish`.
+2. From the Project Explorer select `Import`, `General`, `Existing projects into workspace`. Navigate to where you cloned the projects to, `Select all`, `Finish` (Do not copy the projects into the workspace).
 3. Build the project.
 3. Right-click the Airport project, `Run As`, `Run configurations`. Choose `COBOL Aplication`, create a new launch configuration and open it. 
 4. Navigate to the `Environment` tab and add: `dd_airports` and `..\airports.dat` as the variable and value.

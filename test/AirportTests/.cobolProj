@@ -54,10 +54,9 @@
             </link_settings>
             <deploy_settings xsi:type="deploySettings">
                <options>
-                  <option id="deployFolder" name="deploySettings" value="deploy"/>
-                  <option id="cleanAllowed" name="deploySettings" value="cleanAllowed"/>
-                  <option id="deployFiles" name="deploySettings" value=""/>
-                  <option id="deployPatterns" name="deploySettings" value="New_Configuration.bin/*${exeext}"/>
+                  <option id="deployFolder" name="deploySettings" value="tests.bin"/>
+                  <option id="deployEnabled" name="deploySettings" value="deployEnabled"/>
+                  <option id="deployPatterns" name="deploySettings" value="*.csv"/>
                </options>
             </deploy_settings>
          </configuration>

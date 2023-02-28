@@ -180,6 +180,12 @@
 	<target name="post.build.cfg.New_Configuration" depends="cobol.createcar.cfg.New_Configuration">
 	</target>
 	<target name="deploy.cfg.New_Configuration">
+		<copy file="runtime.cfg" todir="${basedir}/tests.bin" failonerror="false" overwrite="true"/>
+		<copy todir="${basedir}/tests.bin" overwrite="true">
+			<fileset dir="${basedir}">
+				<include name="*.csv"/>
+			</fileset>
+		</copy>
 	</target>
 	<target name="clean.cfg.New_Configuration">
 		<cobolclean debug="true" destdir="${basedir}/tests.bin" desttype="dll">
