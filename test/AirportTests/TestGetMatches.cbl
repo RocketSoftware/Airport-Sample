@@ -61,7 +61,7 @@
            set get-matches to true
            move "MA" to lnk-prefix-text
 
-           call "AIRCODE" using
+           call "aircode" using
                        by value lnk-function
                        by value lnk-airport1
                        by value lnk-airport2
@@ -104,7 +104,7 @@
            initialize lnk-rec
 
            set open-file to true
-           call "AIRCODE" using
+           call "aircode" using
                        by value lnk-function
                        by value lnk-airport1
                        by value lnk-airport2
@@ -119,7 +119,7 @@
        entry MFU-TC-TEARDOWN-PREFIX & TEST-TESTGETMATCHES.
            *> set lnk-function to close the data file which contains the airport codes
            set close-file to true
-           call "AIRCODE" using
+           call "aircode" using
                        by value lnk-function
                        by value lnk-airport1
                        by value lnk-airport2

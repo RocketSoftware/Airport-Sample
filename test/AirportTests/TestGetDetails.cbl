@@ -60,7 +60,7 @@
            set get-details to true
            move "MAD" to lnk-airport1
 
-           call "AIRCODE" using
+           call "aircode" using
                        by value lnk-function
                        by value lnk-airport1
                        by value lnk-airport2
@@ -82,7 +82,7 @@
            set get-details to true
            move "TONG" to lnk-airport1
 
-           call "AIRCODE" using
+           call "aircode" using
                        by value lnk-function
                        by value lnk-airport1
                        by value lnk-airport2
@@ -104,7 +104,7 @@
            set get-details to true
            move "ZZZ" to lnk-airport1
            move spaces to lnk-rec
-           call "AIRCODE" using
+           call "aircode" using
                        by value lnk-function
                        by value lnk-airport1
                        by value lnk-airport2
@@ -143,7 +143,7 @@
 
       *> set lnk-function to open the data file which contains the airport codes
            set open-file to true
-           call "AIRCODE" using
+           call "aircode" using
                        by value lnk-function
                        by value lnk-airport1
                        by value lnk-airport2
@@ -159,7 +159,7 @@
        entry MFU-TC-TEARDOWN-PREFIX & TEST-TESTGETDETAILS.
            *> set lnk-function to close the data file which contains the airport codes
            set close-file to true
-           call "AIRCODE" using
+           call "aircode" using
                        by value lnk-function
                        by value lnk-airport1
                        by value lnk-airport2
