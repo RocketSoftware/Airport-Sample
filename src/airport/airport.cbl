@@ -22,7 +22,7 @@
        screen section.
        copy "distscrn.ss".
        copy "distrec.ss".
-       copy "distsrch.ss".
+       copy "DISTSRCH.ss".
 
        procedure division.
            set pp to entry "aircode"
