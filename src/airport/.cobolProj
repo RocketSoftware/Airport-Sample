@@ -33,7 +33,7 @@
                   <tunable name="output_filtering_enabled" value="true" index="0"/>
                </deployment>
                <envvars>
-                  <envvar name="dd_airports" value="..\airports.dat"/>
+                  <envvar name="dd_airports" value="../airports.dat"/>
                </envvars>
                <envScriptParameters></envScriptParameters>
                <envScriptPath></envScriptPath>
