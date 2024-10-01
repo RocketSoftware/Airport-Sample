@@ -1,11 +1,11 @@
 # Airport Sample
 
-<a href="https://raw.githubusercontent.com/MicroFocus/Airport-Sample/main/airport.png">
+<a href="https://raw.githubusercontent.com/RocketSoftware/Airport-Sample/main/airport.png">
     <img src="airport.png" style="width: 201px;" align="right" alt="Airport screenshot"/>
 </a>
 This sample is a native graphical console application that enables you to view the geographical location and the distance between airports. It shows how to use native COBOL to handle indexed data files. The information about the airport codes is stored in the airports.dat file.
 
-This sample also demonstrates using the Micro Focus Unit Testing Framework for unit testing the Airport sample.
+This sample also demonstrates using the Rocket Unit Testing Framework for unit testing the Airport sample.
 
 ## Structure
 The sample is structured into three projects:
@@ -31,8 +31,8 @@ The files include:
 1. Open Airport.sln.
 2. Build the solution and start debugging.
 3. Follow the instructions on the console. To see the available airport codes view the airports.dat file by opening it using the Data File Editor.
-4. Open the "Micro Focus Unit Testing" tool window and click "Run All" to run all the unit tests.
-5. To run the unit tests with code coverage, first edit the project properties of aircode and AirportTests, select the COBOL tab and ensure "Enable code coverage" is checked. Then click "Run with Code Coverage" in the "Micro Focus Unit Testing" tool window.
+4. Open the "Unit Testing" tool window and click "Run All" to run all the unit tests.
+5. To run the unit tests with code coverage, first edit the project properties of aircode and AirportTests, select the COBOL tab and ensure "Enable code coverage" is checked. Then click "Run with Code Coverage" in the "Unit Testing" tool window.
 
 ### Eclipse
 
@@ -47,7 +47,7 @@ The files include:
 2. Navigate to the `Environment` tab and add: `dd_airports` and `../../../src/airport/airports.dat` as the variable and value.
 3. You can now run all the unit tests using your new launch configuration.
 #### To enable code coverage:
-1. For Airport and Aircode right-click on each of the projects and select `Properties -> MicroFocus -> Project Settings -> COBOL` set `Enable code coverage` to true.
+1. For Airport and Aircode right-click on each of the projects and select `Properties -> COBOL` set `Enable code coverage` to true.
 2. Open the launch configuration you made to run and debug the program, navigate to the 'Dynamic analysis' Tab. Check 'Enable code coverage'
 3. Build and run the sample.
 4. To view code coverage results navigate to the `Code coverage` tab of the bottom plain of the IDE. Select `import`, and select the .tcz file within the coverage folder of the project folder structure. 
@@ -55,17 +55,17 @@ The files include:
 
 ## License
 
-Copyright 2023 Open Text. All Rights Reserved.
+Copyright 2023-2024 Rocket Software, Inc. or its affiliates.
 This software may be used, modified, and distributed
 (provided this notice is included without modification)
 solely for internal demonstration purposes with other
-Micro Focus software, and is otherwise subject to the EULA at
-https://www.microfocus.com/en-us/legal/software-licensing.
+Rocket® products, and is otherwise subject to the EULA at
+https://www.rocketsoftware.com/company/trust/agreements.
 
 THIS SOFTWARE IS PROVIDED "AS IS" AND ALL IMPLIED
 WARRANTIES, INCLUDING THE IMPLIED WARRANTIES OF
 MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE,
 SHALL NOT APPLY.
 TO THE EXTENT PERMITTED BY LAW, IN NO EVENT WILL
-MICRO FOCUS HAVE ANY LIABILITY WHATSOEVER IN CONNECTION
+ROCKET SOFTWARE HAVE ANY LIABILITY WHATSOEVER IN CONNECTION
 WITH THIS SOFTWARE.
